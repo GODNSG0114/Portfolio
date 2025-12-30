@@ -1,9 +1,11 @@
 import Landing from "./Pages/Landing"
+import { ToastContainer } from "react-toastify"
 function App() {
 
   return (
     <>
-      <Landing />
+      <ToastContainer/>
+        <Landing />
     </>
   )
 }

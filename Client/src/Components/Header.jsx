@@ -57,7 +57,7 @@ const Header = () => {
       <div className="  relative z-10 flex flex-col justify-center min-h-screen px-12 ">
         <div className="  pl-10 max-w-4xl">
           {/* Greeting */}
-          <p className="text-lime-400 text-lg mb-6 font-light  ">Hi there, i'm</p>
+          <p className="text-lime-400 text-lg mb-6 font-light  ">Hey there, i'm</p>
 
           {/* Name */}
           <h1 className=" text-7xl lg:text-8xl font-black text-lime-400 mb-4 tracking-tight">
@@ -83,9 +83,7 @@ const Header = () => {
             <button onClick={GithubCall} className="bg-lime-400 text-slate-900 px-10 py-4 rounded-full font-bold text-lg hover:bg-lime-300 transition-all transform hover:scale-105 hover:shadow-lg hover:shadow-lime-400/50">
               Say Hi
             </button>
-            <button className="bg-lime-400 text-slate-900 px-10 py-4 rounded-full font-bold text-lg hover:bg-lime-300 transition-all transform hover:scale-105 hover:shadow-lg hover:shadow-lime-400/50">
-              Blogs
-            </button>
+            
           </div>
         </div>
       </div>

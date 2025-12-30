@@ -1,24 +1,34 @@
 import PreDys_Thumbnail from './PreDys_Thumbnail.png'
 import Remova_Thumbnail from './Remova_Thumbnail.png'
+import lms from './LMS.png'
 export const projects = [
     {
       id: 1,
       title: "PreDys",
       description: "PreDys is a machine learning-based dyslexia detection system that combines CNN and Random Forest models to analyze and identify dyslexia patterns. This mini project leverages deep learning for image-based analysis and ensemble methods for robust classification, providing an accessible tool for early dyslexia screening.",
-      tech: "Python, CNN model, Random Forest Model, OCR",
+      tech: "Python, CNN Model, Random Forest Model, OCR",
       image: PreDys_Thumbnail,
       codeLink: "https://drive.google.com/drive/folders/1_jfo1syWBBODw2_apKEsC0preeIxZjAC",
       demoLink: "https://drive.google.com/drive/folders/1_jfo1syWBBODw2_apKEsC0preeIxZjAC"
     },
     {
       id: 2,
+      title: "Learning Management System",
+      description:"Developed a full-stack LMS with Clerk authentication and Stripe payment integration, enabling secure user access and seamless course purchases. The platform supports course management, enrollment, and scalable learning workflows." ,
+      tech: "React, Stripe, Tailwind, Clerk, MongoDB, Express.JS, Node.js  ",
+      image: lms,
+      codeLink: "https://github.com/GODNSG0114/Learning_Management_System",
+      demoLink: "https://lms-frontend-git-main-nikhil-gods-projects.vercel.app/"
+    },
+    {
+      id: 3,
       title: "Remova",
       description: "Remova is an AI-powered background removal tool that enables users to seamlessly extract subjects from images with a single click. The application features a credit-based system with 5 free credits for new users, allowing them to purchase additional credits through secure Razorpay payment integration. Built with Clerk authentication for user management, it combines computer vision technology with a scalable monetization model.",
-      tech: "React, Tailwind, Clerk ,MongoDB, Express.JS ,Node.js, Webhook ,Razorpay ",
+      tech: "React, Tailwind, Clerk, MongoDB, Express.JS, Node.js, Webhook, Razorpay ",
       image: Remova_Thumbnail,
       codeLink: "https://github.com/GODNSG0114/BG_Removal",
       demoLink: "https://bg-remova-git-main-nikhil-gods-projects.vercel.app/"
-    }
+    },
    
   ];
 

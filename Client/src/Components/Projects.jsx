@@ -41,7 +41,7 @@ const Projects = () => {
               className="grid lg:grid-cols-2 gap-8 items-start"
             >
               {/* Project Image */}
-              <div className="bg-black rounded-lg overflow-hidden shadow-2xl group">
+              <div className="bg-black rounded-lg overflow-hidden shadow-2xl group ">
                 <img src={project.image} alt="" />
               </div>
 
@@ -65,7 +65,7 @@ const Projects = () => {
                 </div>
 
                 {/* Links */}
-                <div className="flex gap-6 pt-4">
+                <div className="flex gap-6 pt-1">
                   <a target='_blank'
                     href={project.codeLink}
                     className="text-lime-400 border-b-2 border-dotted border-lime-400 hover:border-solid hover:text-lime-300 transition-all font-medium flex items-center gap-2"

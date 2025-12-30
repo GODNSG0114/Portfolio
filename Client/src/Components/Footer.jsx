@@ -2,6 +2,9 @@ import React from 'react'
 import { useState } from 'react';
 
 const Footer = () => {
+
+const [isSubmitted ,setisSubmitted] = useState(false);
+
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
@@ -20,7 +23,7 @@ const Footer = () => {
       ...prev,
       [name]: value
     }));
-    if (errors[name]) {
+    if (errors[name]) {   
       setErrors(prev => ({
         ...prev,
         [name]: ''
@@ -47,6 +50,17 @@ const Footer = () => {
     }
     
     console.log('Form submitted:', formData);
+
+    setisSubmitted(true);
+    setTimeout(() => {
+      setisSubmitted(false);
+    }, 2000);
+
+    setFormData({
+    fullName: '',
+    email: '',
+    message: ''
+  })
   };
 
   return (
@@ -117,7 +131,7 @@ const Footer = () => {
           </div>
 
           {/* Right Side - Contact Form in Circle */}
-          <div className="relative">
+          <div className="relative md:block hidden">
             <div className="w-[380px] h-[380px] bg-white rounded-full flex items-center justify-center shadow-2xl">
               <div className="w-full px-14">
                 {/* Menu Icon */}
@@ -179,7 +193,7 @@ const Footer = () => {
                       type="submit"
                       className="bg-[#d4ef3f] text-[#1e3a47] font-bold px-16 py-3 rounded-full hover:bg-[#c5e030] transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
                     >
-                      Submit
+                      { isSubmitted?' Submitted' : 'Submit'}
                     </button>
                   </div>
                 </form>

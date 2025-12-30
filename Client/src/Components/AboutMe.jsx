@@ -48,11 +48,11 @@ const AboutMe = () => {
           {/* Description Paragraphs */}
           <div className="space-y-6 text-lime-400 text-lg lg:text-xl leading-relaxed">
             <p>
-              Hey there! I'm a CSE student at Walchand College of Engineering, Sangli, where code meets creativity. My journey in tech started with a fascination for how things work under the hood, which led me to dive deep into Data Structures & Algorithms. As an ex-member of the WCE ACM chapter, I've collaborated with brilliant minds, tackled challenging problems, and discovered my love for both competitive programming and web development.
+              Hey there! I'm a CSE student at Walchand College of Engineering, Sangli, where code meets creativity. My journey in tech started with a fascination for how things work under the hood, which led me to dive deep into web technologies and building user-centric applications. As an ex-member of the WCE ACM chapter, I've collaborated with brilliant minds, tackled challenging problems, and discovered my love for both DSA and web development.
             </p>
 
             <p>
-              I believe great software is built at the intersection of logic and design. When I'm not debugging code or optimizing algorithms, you'll find me experimenting with modern web technologies, building side projects, or writing technical blogs to share what I've learned. My goal is simple: create impactful digital experiences that solve real problems while continuously pushing my boundaries as a developer.</p>
+              I believe great software is built at the intersection of logic and design. When I'm not debugging code or optimizing algorithms, you'll find me experimenting with modern web technologies, building side projects. My goal is simple: create impactful digital experiences that solve real problems while continuously pushing my boundaries as a developer.</p>
             <p >
               Technologies I've learned and continuously explore :
             </p>
