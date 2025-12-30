@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <>
       {/* Navigation Bar */}
-      <div className="fixed bottom-0.5 lg:bottom-12 lg:left-1/2 transform lg:-translate-x-1/2 z-20 " >
+      <div className="fixed bottom-5 lg:bottom-12 lg:left-1/2 transform lg:-translate-x-1/2 z-20 " >
         <nav className="bg-slate-800/80 backdrop-blur-lg rounded-full px-2 py-2 shadow-2xl border border-slate-700/50">
           <ul className="flex items-center gap-3 lg:gap-4">
 
