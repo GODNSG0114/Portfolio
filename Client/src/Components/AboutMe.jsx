@@ -30,10 +30,10 @@ const AboutMe = () => {
       {/* Decorative Shapes - Top Right */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 right-0 w-64 h-64">
-          <div className="absolute top-4 right-48 w-16 h-16 bg-orange-500 rounded-sm opacity-70"></div>
-          <div className="absolute top-8 right-32 w-20 h-20 border-4 border-teal-400 rounded-full opacity-60"></div>
-          <div className="absolute top-20 right-64 w-12 h-12 bg-orange-400 rounded-full opacity-50"></div>
-          <div className="absolute top-32 right-48 w-24 h-24 border-4 border-yellow-400 rounded-full opacity-40"></div>
+          <div className="absolute top-4 right-48 w-16 h-16 bg-orange-500 rounded-sm opacity-70  md:block hidden"></div>
+          <div className="absolute top-8 right-32 w-20 h-20 border-4 border-teal-400 rounded-full opacity-60  md:block hidden"></div>
+          <div className="absolute top-20 right-64 w-12 h-12 bg-orange-400 rounded-full opacity-50  md:block hidden"></div>
+          <div className="absolute top-32 right-48 w-24 h-24 border-4 border-yellow-400 rounded-full opacity-40  md:block hidden"></div>
         </div>
       </div>
 

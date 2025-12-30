@@ -31,13 +31,13 @@ const Header = () => {
       {/* Decorative Shapes */}
       <div className="absolute inset-0 pointer-events-none">
 
-        <div className="absolute top-4 right-48 w-32 h-32 border-8 border-teal-400 rounded-full opacity-80 animate-pulse"
-          style={{ animationDuration: '3s' }}></div>
+        <div className="absolute top-4 right-48 w-32 h-32 border-8 border-teal-400 rounded-full opacity-80 "
+          ></div>
 
         <div className="absolute top-8 right-12 w-40 h-40 border-8 border-orange-400 rounded-full opacity-70"
           style={{ clipPath: 'polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%)' }}></div>
 
-        <div className="absolute top-64 right-32 w-36 h-36 border-8 border-teal-300 rounded-full opacity-60"
+        <div className="absolute top-64 right-32 w-36 h-36 border-8 border-teal-300 rounded-full opacity-60 md:block hidden "
           style={{ clipPath: 'polygon(0% 50%, 0% 100%, 100% 100%, 100% 50%)' }}></div>
 
         <div className="absolute top-12 right-80 w-1 h-64 bg-gradient-to-b from-teal-400 to-transparent opacity-70"></div>
@@ -45,7 +45,8 @@ const Header = () => {
         <div className="absolute top-80 right-64 w-24 h-24 border-8 border-orange-500 rounded-full opacity-60 animate-bounce"
           style={{ animationDuration: '4s' }}></div>
 
-        <div className="absolute bottom-32 right-24 w-32 h-48 border-8 border-orange-400 rounded-3xl opacity-50"></div>
+        <div className="absolute bottom-32 right-24 w-32 h-48 border-8 border-orange-400 rounded-3xl opacity-80 md:block hidden animate-pulse"
+        style={{ animationDuration: '3s' }}></div>
 
         <div className="absolute bottom-8 right-96 w-48 h-32 border-8 border-teal-400 rounded-full opacity-60"
           style={{ clipPath: 'ellipse(40% 60% at 50% 40%)' }}></div>
@@ -80,7 +81,7 @@ const Header = () => {
      
           {/* Buttons */}
           <div className="flex gap-6">
-            <button onClick={GithubCall} className="bg-lime-400 text-slate-900 px-10 py-4 rounded-full font-bold text-lg hover:bg-lime-300 transition-all transform hover:scale-105 hover:shadow-lg hover:shadow-lime-400/50">
+            <button onClick={GithubCall} className="bg-lime-400 text-slate-900 px-10 py-4 rounded-full font-bold text-lg hover:bg-lime-300 transition-all transform hover:scale-105 hover:shadow-lg hover:shadow-lime-400/50 md:m-auto">
               Say Hi
             </button>
             
