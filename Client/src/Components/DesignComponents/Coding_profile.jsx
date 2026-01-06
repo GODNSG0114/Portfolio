@@ -66,7 +66,7 @@ const Coding_profile = () => {
                 <div className="flex-1 bg-gray-800 rounded-full h-2 overflow-hidden">
                   <div
                     className="bg-green-400 h-full transition-all duration-500"
-                    style={{ width: `${(leetcodeData?.easySolved / 800) * 100}%` }}
+                    style={{ width: `${(leetcodeData?.easySolved /(leetcodeData?.easySolved + leetcodeData?.mediumSolved + leetcodeData?.hardSolved) ) * 100}%` }}
                   ></div>
                 </div>
               </div>
@@ -75,7 +75,7 @@ const Coding_profile = () => {
                 <div className="flex-1 bg-gray-800 rounded-full h-2 overflow-hidden">
                   <div
                     className="bg-yellow-400 h-full transition-all duration-500"
-                    style={{ width: `${(leetcodeData?.mediumSolved / 1600) * 100}%` }}
+                    style={{ width: `${(leetcodeData?.mediumSolved / (leetcodeData?.easySolved + leetcodeData?.mediumSolved + leetcodeData?.hardSolved)) * 100}%` }}
                   ></div>
                 </div>
               </div>
@@ -84,7 +84,7 @@ const Coding_profile = () => {
                 <div className="flex-1 bg-gray-800 rounded-full h-2 overflow-hidden">
                   <div
                     className="bg-red-400 h-full transition-all duration-500"
-                    style={{ width: `${(leetcodeData?.hardSolved / 700) * 100}%` }}
+                    style={{ width: `${(leetcodeData?.hardSolved / (leetcodeData?.easySolved + leetcodeData?.mediumSolved + leetcodeData?.hardSolved)) * 100}%` }}
                   ></div>
                 </div>
               </div>
