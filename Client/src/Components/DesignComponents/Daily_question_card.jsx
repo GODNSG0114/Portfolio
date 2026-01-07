@@ -7,7 +7,7 @@ const Daily_question_card = () => {
 
 const {dailyQuestion, dailyLoading , dailysolved} = useContext(appContext)
 
-  return (
+ if(dailyQuestion) {return (
     <>
       {/* Daily Question Card */}
       <div className="relative group">
@@ -70,7 +70,8 @@ const {dailyQuestion, dailyLoading , dailysolved} = useContext(appContext)
         </div>
       </div>
     </>
-  )
+  )}
+  
 }
 
 export default Daily_question_card

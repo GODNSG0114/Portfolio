@@ -19,7 +19,7 @@ const Coding_profile = () => {
     fetchLeetCodeData();
   }, []);
 
-  return (
+ if(leetcodeData){ return (
     <div className="relative group">
       {!loading && <div className="absolute inset-0 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-500"></div>}
       <div className="relative bg-gray-900 rounded-2xl p-8 border border-gray-800 hover:border-orange-500 transition duration-300">
@@ -93,7 +93,10 @@ const Coding_profile = () => {
         )}
       </div>
     </div>
-  )
+  )}
+  else {
+    return <div className="text-gray-500">Loading stats...</div>
+  }
 }
 
 export default Coding_profile

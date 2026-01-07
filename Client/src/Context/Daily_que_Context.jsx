@@ -34,7 +34,6 @@ const Submissions = async ()=>{
             toast.error(error.message);
           }
      }
-
 useEffect(()=>{
    fetchDailyQuestion();
    Submissions();
